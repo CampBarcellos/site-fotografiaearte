@@ -1,0 +1,166 @@
+@media (max-width: 768px) {
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    padding-top: 45px;
+    padding-right: 20px;
+    list-style: none;
+  }
+
+  nav a,
+  .menuPortfolio {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 120px;
+    top: 15px;
+    left: 10px;
+  }
+
+  .submenu {
+    position: absolute;
+    min-width: 150px;
+    padding: 15px;
+    left: auto;
+    right: 0;
+  }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    list-style: none;
+    padding-top: 40px;
+}
+
+/*.logo{
+  position: absolute;
+  left: 4%;
+  top: 40px;
+  width: 13rem;
+  filter: drop-shadow(0 1px 8px rgba(239, 239, 241, 0.8));
+}*/
+
+nav{
+  font-family: "Playfair Display SC", serif;
+}
+
+nav a, .menuPortfolio{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover, .menuPortfolio:hover{
+  color: rgb(117, 116, 119);
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    flex-direction: column; /* só funciona quando o hover mudar pra display: flex */
+    gap: 10px;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    top: 100%;
+    left: 0px;
+    min-width: 180px;
+    
+}
+
+.dropdown:hover .submenu {
+    display: flex;
+    border-radius: 5%; /* aqui ativa o flex e o flex-direction já tá configurado */
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.submenu a {
+    font-family: "Iosevka Charon", monospace;
+    font-weight: 300;
+    color: black;
+}
+
+.cabecalho{
+    height: 120px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
+}
+
+
+header {
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: #ccc;
+}
+
+.nomeTitulo{
+    margin-bottom: 20px;
+    text-align: center;
+    word-spacing: 1px;
+}
+
+.sobre{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 10px;
+    padding: 50px 80px;
+    font-family: "Iosevka Charon", monospace;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 1.8;
+
+}
+
+.sobre img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+footer{
+    background-color: rgb(94, 93, 93);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: "Iosevka Charon", monospace;
+}
+
+/* responsividade do sobre */
+@media (max-width: 768px) {
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
