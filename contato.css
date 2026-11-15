@@ -1,35 +1,3 @@
-@media (max-width: 768px) {
-
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 0.8rem;
-    padding-top: 45px;
-    padding-right: 20px;
-    list-style: none;
-  }
-
-  nav a,
-  .menuPortfolio {
-    font-size: 14px;
-  }
-
-  .logo {
-    width: 120px;
-    top: 15px;
-    left: 10px;
-  }
-
-  .submenu {
-    position: absolute;
-    min-width: 150px;
-    padding: 15px;
-    left: auto;
-    right: 0;
-  }
-}
-
-
 
 * {
     margin: 0;
@@ -171,10 +139,35 @@ footer{
     font-family: "Iosevka Charon", monospace;
 }
 
-/* responsividade do sobre */
+
+
 @media (max-width: 768px) {
-  .sobre {
-    flex-direction: column;
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    
+    gap: 0.8rem;
+    padding-top: 75px;
+    padding-right: 20px;
+    list-style: none;
+  }
+
+  nav a,
+  .menuPortfolio {
+    font-size: 14px;
+  }
+
+  .submenu {
+    position: absolute;
+    min-width: 150px;
+    padding: 15px;
+    left: auto;
+    right: 0;
+  }
+
+  .texto {
+    padding: 30px 30px;
     text-align: center;
   }
 }
