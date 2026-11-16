@@ -8,6 +8,25 @@ body{
   overflow-x: hidden;
 }
 
+.footer-politica {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.footer-politica a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.footer-politica a:hover {
+    opacity: 0.75;
+}
+
+.footer-politica a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
+
 
 @media (max-width: 768px) {
 

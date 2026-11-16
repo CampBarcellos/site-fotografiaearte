@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    list-style: none;
+    padding-top: 40px;
+}
+
+nav{
+  font-family: "Playfair Display SC", serif;
+}
+
+nav a, .menuPortfolio{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover, .menuPortfolio:hover{
+  color: rgb(117, 116, 119);
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    top: 100%;
+    left: 0px;
+    min-width: 180px;
+}
+
+.dropdown:hover .submenu {
+    display: flex;
+    border-radius: 5%;
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.submenu a {
+    font-family: "Iosevka Charon", monospace;
+    font-weight: 300;
+    color: black;
+}
+
+.cabecalho{
+    height: 120px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
+}
+
+header {
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: #ccc;
+}
+
+/* Conteúdo da política */
+
+.politica {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 30px 80px;
+    font-family: "Iosevka Charon", monospace;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+.titulo {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.politica h2 {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 34px;
+    margin-bottom: 8px;
+}
+
+.atualizacao {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Rodapé */
+
+footer{
+    background-color: rgb(94, 93, 93);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: "Iosevka Charon", monospace;
+}
+
+.footer-politica {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.footer-politica a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.footer-politica a:hover {
+    opacity: 0.75;
+}
+
+.footer-politica a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
+
+
+@media (max-width: 768px) {
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    padding-top: 75px;
+    padding-right: 20px;
+    list-style: none;
+  }
+
+  nav a,
+  .menuPortfolio {
+    font-size: 14px;
+  }
+
+  .submenu {
+    position: absolute;
+    min-width: 150px;
+    padding: 15px;
+    left: auto;
+    right: 0;
+  }
+
+  .politica {
+    padding: 40px 20px 60px;
+  }
+
+  .titulo {
+    font-size: 26px;
+  }
+}
