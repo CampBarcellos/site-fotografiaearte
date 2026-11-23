@@ -79,7 +79,7 @@ header::after {
   background: #ccc;
 }
 
-/* Conteúdo da política */
+
 
 .politica {
     max-width: 800px;
@@ -113,7 +113,6 @@ header::after {
     color: #555;
 }
 
-/* Rodapé */
 
 footer{
     background-color: rgb(94, 93, 93);

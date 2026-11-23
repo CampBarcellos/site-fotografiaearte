@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -17,13 +16,6 @@ nav ul{
     padding-top: 40px;
 }
 
-/*.logo{
-  position: absolute;
-  left: 4%;
-  top: 40px;
-  width: 13rem;
-  filter: drop-shadow(0 1px 8px rgba(239, 239, 241, 0.8));
-}*/
 
 nav{
   font-family: "Playfair Display SC", serif;
@@ -126,10 +118,6 @@ header::after {
   color: rgb(65, 63, 63);
 }
 
-.botao {
-    text-align: center;
-    margin-top: 60px;
-}
 
 footer{
     background-color: rgb(94, 93, 93);
@@ -139,24 +127,6 @@ footer{
     font-family: "Iosevka Charon", monospace;
 }
 
-.footer-politica {
-    margin-top: 8px;
-    font-size: 14px;
-}
-
-.footer-politica a {
-    color: inherit;
-    text-decoration: underline;
-}
-
-.footer-politica a:hover {
-    opacity: 0.75;
-}
-
-.footer-politica a:focus-visible {
-    outline: 2px solid currentColor;
-    outline-offset: 3px;
-}
 
 
 @media (max-width: 768px) {
@@ -188,4 +158,110 @@ footer{
     padding: 30px 30px;
     text-align: center;
   }
+}
+
+.footer-politica {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.footer-politica a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.footer-politica a:hover {
+    opacity: 0.75;
+}
+
+.footer-politica a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
+
+
+
+.orcamento {
+    padding: 20px 20px 80px;
+    font-family: "Iosevka Charon", monospace;
+}
+
+.formOrcamento {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.formTitulo {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formSubtitulo {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-family: "Iosevka Charon", monospace;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #8a8a8a;
+    border-radius: 8px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: 2px solid rgb(94, 93, 93);
+    outline-offset: 1px;
+}
+
+.campo textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.formBotao {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.botaoEnviar {
+    cursor: pointer;
+    padding: 12px 30px;
+}
+
+@media (max-width: 768px) {
+    .orcamento {
+        padding: 10px 15px 60px;
+    }
+
+    .formOrcamento {
+        padding: 25px 20px;
+    }
 }

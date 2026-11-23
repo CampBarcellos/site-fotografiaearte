@@ -49,14 +49,6 @@ nav ul{
     padding-top: 40px;
 }
 
-/*.logo{
-  position: absolute;
-  left: 4%;
-  top: 40px;
-  width: 13rem;
-  filter: drop-shadow(0 1px 8px rgba(239, 239, 241, 0.8));
-}*/
-
 nav{
   font-family: "Playfair Display SC", serif;
 }
@@ -74,7 +66,7 @@ nav a:hover, .menuPortfolio:hover{
 .submenu{
     display: none;
     position: absolute;
-    flex-direction: column; /* só funciona quando o hover mudar pra display: flex */
+    flex-direction: column; 
     gap: 10px;
     list-style: none;
     background-color: rgb(255, 255, 255);
@@ -87,7 +79,7 @@ nav a:hover, .menuPortfolio:hover{
 
 .dropdown:hover .submenu {
     display: flex;
-    border-radius: 5%; /* aqui ativa o flex e o flex-direction já tá configurado */
+    border-radius: 5%; 
 }
 
 .dropdown {

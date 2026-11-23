@@ -43,7 +43,7 @@ nav a:hover, .menuPortfolio:hover{
 .submenu{
     display: none;
     position: absolute;
-    flex-direction: column; /* só funciona quando o hover mudar pra display: flex */
+    flex-direction: column; 
     gap: 10px;
     list-style: none;
     background-color: rgb(255, 255, 255);
@@ -56,7 +56,7 @@ nav a:hover, .menuPortfolio:hover{
 
 .dropdown:hover .submenu {
     display: flex;
-    border-radius: 5%; /* aqui ativa o flex e o flex-direction já tá configurado */
+    border-radius: 5%; 
 }
 
 .dropdown {
@@ -98,11 +98,11 @@ nav a:hover, .menuPortfolio:hover{
 }
 
 header{
-  position: absolute; /* ou fixed se quiser que fique sempre visível ao rolar */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10; /* fica na frente dos slides */
+  z-index: 10; 
 }
 
 .slides::before {

@@ -14,7 +14,6 @@
 
     <header>
         <section class="cabecalho">
-        <!-- <a href="home.html"><img class="logo" src="img/logo.png" alt="imagem da Logo"></a> -->
         <nav>
             <ul>
                 <li><a href="home.html">home</a></li>
@@ -24,7 +23,7 @@
                     <span class="menuPortfolio">portfólio ▾</span>
                     <ul class="submenu">
                         <li><a href="eventosSociais.html">Eventos Sociais</a></li>
-                        <li><a href="Eccomerce.html">E-commerce</a></li>
+                        <li><a href="corporativos.html">Corporativos</a></li>
                         <li><a href="estudio.html">Estúdio</a></li>
                     </ul>
                 </li>
@@ -43,23 +42,74 @@
                 mesmo depois de muito tempo, você possa olhar para essas imagens e reviver a emoção de cada momento. Não deixe essas ocasiões passarem em branco! 
                 Entre em contato conosco, conte um pouquinho sobre o que está planejando e vamos juntos encontrar a melhor maneira de registrar tudo isso. Será um prazer fazer parte da sua história!
             </p>
+        </div>
 
-            <div class="botao">
-            <a href="https://wa.me/5511996135259?text=Olá%20Mônica,%20gostaria%20de%20mais%20informações%20sobre%20seu%20serviço!"
-            class="botaoContato"
-            target="_blank"
-            rel="noopener noreferrer">
-            Entre em contato
-        </a>
-        </div>
-        </div>
+        <section class="orcamento">
+            <form class="formOrcamento" id="formOrcamento">
+                <h2 class="formTitulo">Solicite seu orçamento</h2>
+                <p class="formSubtitulo">
+                    Preencha seus dados e envie sua solicitação pelo WhatsApp.
+                    <br>
+                    Campos com * são obrigatórios.
+                </p>
+
+                <div class="campo">
+                    <label for="nome">Nome completo *</label>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </div>
+
+                <div class="campo">
+                    <label for="whatsapp">WhatsApp *</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" autocomplete="tel" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" autocomplete="email">
+                </div>
+
+                <div class="campo">
+                    <label for="servico">Tipo de serviço *</label>
+                    <select id="servico" name="servico" required>
+                        <option value="" selected disabled>Selecione uma opção</option>
+                        <option value="Ensaio fotográfico">Ensaio fotográfico</option>
+                        <option value="Casamento">Casamento</option>
+                        <option value="Aniversário">Aniversário</option>
+                        <option value="Evento / comemoração">Evento / comemoração</option>
+                        <option value="Ecommerce">Ecommerce</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="data">Data do evento ou ensaio</label>
+                    <input type="date" id="data" name="data">
+                </div>
+
+                <div class="campo">
+                    <label for="local">Local do evento</label>
+                    <input type="text" id="local" name="local" placeholder="Cidade, bairro ou nome do local">
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte um pouco sobre o que você deseja"></textarea>
+                </div>
+
+                <div class="formBotao">
+                    <button type="submit" class="botaoContato botaoEnviar">Enviar solicitação</button>
+                </div>
+            </form>
+        </section>
 
     </main>
 
     <footer>
     <p class="footer-texto">© 2026 Fotografia &amp; Arte — todos os direitos reservados</p>
     <p class="footer-politica"><a href="politica.html">Política de Privacidade</a></p>
-    </footer> 
+    </footer>  
+
+    <script src="contato.js"></script>
 
 </body>
 </html>
