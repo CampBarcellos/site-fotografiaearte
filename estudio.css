@@ -94,6 +94,14 @@ header::after {
     line-height: 1.8;
 }
 
+.enderecoEstudio {
+    text-align: center;
+    font-family: "Iosevka Charon", monospace;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    padding: 0 20px 20px;
+}
+
 .galeria {
     columns: 2;             
     column-gap: 20px;
